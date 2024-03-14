@@ -73,7 +73,7 @@ for i in range(len(input_files)-1):
 
     # Extract format information (use it only if format is not specified)
     if not args.out_format:
-      out_format = input_files[i][:-3]
+      args.out_format = input_files[i][-3:]
 
 
     # Extract shape information and pad
