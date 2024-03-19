@@ -34,7 +34,7 @@ Where:
 * num_frames is the number of additional frames that you want to generate between every two frames (please choose 1, 3 or 7)
 * output_format is the format (i.e png, tif) in which you want the frames to be saved; if not speicfied, the same format as the input will be used
 
-**Fine Tuning
+### Fine Tuning
 ```
 !torchrun train_NEW.py --epoch='{number_of_epochs}' --world_size=1 
 ```
