@@ -36,6 +36,8 @@ Where:
 
 ### Fine Tuning
 Copy the pretrained model to RIFE-3D-tom/train_log_original/, the fine tuned model will be saved in RIFE-3D-tom/train_log/
+
+
 The dataset used for fine tunining should have the following structure:
 ...
 ```
