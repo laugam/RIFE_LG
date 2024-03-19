@@ -16,7 +16,7 @@ pip3 install -r requirements.txt
 
 * Download the pretrained **HD** models from [here](https://drive.google.com/file/d/1EAbsfY7mjnXNa6RAsATj2ImAEqmHTjbE/view), made available by the RIFE developers
 
-* Unzip and move the pretrained parameters to train_log/\*
+* Unzip and move the pretrained parameters to RIFE-3D-tom/train_log/
 
 * Please note that other pretrained models are available within the [RIFE](https://github.com/megvii-research/ECCV2022-RIFE) and [PracticalRIFE](https://github.com/hzwer/Practical-RIFE) Github pages
 
@@ -35,6 +35,9 @@ Where:
 * output_format is the format (i.e png, tif) in which you want the frames to be saved; if not speicfied, the same format as the input will be used
 
 ### Fine Tuning
+Copy the pretrained model to RIFE-3D-tom/train_log_original/, the fine tuned model will be saved in RIFE-3D-tom/train_log/
+The dataset used for fine tunining should have the following structure:
+...
 ```
 !torchrun train_NEW.py --epoch='{number_of_epochs}' --world_size=1 
 ```
