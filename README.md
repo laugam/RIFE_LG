@@ -24,7 +24,6 @@ pip3 install -r requirements.txt
 
 **Image Interpolation**
 
-You can use our [demo video](https://drive.google.com/file/d/1i3xlKb7ax7Y70khcTcuePi6E7crO_dFc/view?usp=sharing) or your own video. 
 ```
 python3 inference_imgNEW.py --in_folder '{input_folder}' --add '{num_frames}' --out_folder '{output_folder}' --out_format '{output_format}'
 ```
@@ -35,3 +34,7 @@ Where:
 * num_frames is the number of additional frames that you want to generate between every two frames (please choose 1, 3 or 7)
 * output_format is the format (i.e png, tif) in which you want the frames to be saved; if not speicfied, the same format as the input will be used
 
+**Fine Tuning
+```
+!torchrun train_NEW.py --epoch='{numer_of_epochs}' --world_size=1 
+```
