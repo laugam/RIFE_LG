@@ -36,5 +36,5 @@ Where:
 
 **Fine Tuning
 ```
-!torchrun train_NEW.py --epoch='{numer_of_epochs}' --world_size=1 
+!torchrun train_NEW.py --epoch='{number_of_epochs}' --world_size=1 
 ```
